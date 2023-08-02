@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+@layer components {
+  .effect-thickness {
+    box-shadow: 0 3px 0 0px #d5d5d5, 0 12px 2px 0px rgba(0, 0, 0, 0.2), 0 6px 0 0px #ababab, 0 12px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  .effect-button {
+    box-shadow: 0 6px 0 0px #9f2450, 0 12px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  .effect-button-sm {
+    box-shadow: 0 4px 0 0px #9f2450, 0 10px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  .effect-button:hover,
+  .effect-button-sm:hover {
+    box-shadow: 0 6px 0 0px #e2255b, 0 12px 15px 0px rgba(250, 43, 102, 0.5);
+  }
+}
+
+li.active {
+  background-color: #fb2c67;
+}
+li.active svg,
+li.active span {
+  color: white;
+}
