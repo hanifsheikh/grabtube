@@ -2,8 +2,8 @@ import { convertBytes } from '@/utils/helpers';
 import * as os from 'os';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { create as CreateYoutubeDL } from 'youtube-dl-exec';
-import type { Format, VideoInfo, YtFormat } from '@/types/youtube';
-import path from 'path';
+import type { Format, VideoInfo, YtFormat } from '@/types/youtube'; 
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method == 'POST') {
     const { url } = req.body;
